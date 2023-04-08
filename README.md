@@ -4,11 +4,15 @@ Process hydrological time series data of Brazil
 
 ## Description
 
-The R package *hidrotsbr* provides tools for reading, cleaning and processing data from hydrological services of Brasil.
+The R package *hidrotsbr* provides tools for reading, cleaning and processing data from hydrological services of Brazil.
+Currently, the package contains functions for:
+
+- Groundwater level from piezometers of the Geological Survey of Brazil's (CPRM) Groundwater Monitoring Network (RIMAS)
+- Rainfall data from monitoring stations of the Meteorological Foundation of Ceara (FUNCEME)
 
 ## Instalation
 
-You can install the **development** version from
+You can install the package from
 [Github](https://github.com/rubensocj/hidrotsbr)
 
 ``` r
@@ -20,23 +24,18 @@ remotes::install_github("rubensocj/hidrotsbr")
 
 ``` r
 library(hidrotsbr)
+
+# RIMAS/CPRM Data
+funceme <- read_rimas("/path/to/file.csv")
+
+# FUNCEME Data
+cprm <- read_funceme("/path/to/file.txt")
 ```
 
-- RIMAS/CPRM Data
+## Data source
 
-Download groundwater level data from [RIMAS *Web*](http://rimasweb.cprm.gov.br/layout/).
-
-``` r
-data <- read_rimas('/path/to/file.csv)
-```
-
-- FUNCEME Data
-
-Download rainfall data from [FUNCEME](http://www.funceme.br/?page_id=2694) or [here](http://www.funceme.br/produtos/script/chuvas/Download_de_series_historicas/DownloadChuvasPublico.php).
-
-``` r
-data <- read_funceme('/path/to/file.txt)
-```
+- RIMAS/CPRM groundwater level data: [link](http://rimasweb.cprm.gov.br/layout/)
+- FUNCEME rainfall data: [link 1](http://www.funceme.br/?page_id=2694) or [link 2](http://www.funceme.br/produtos/script/chuvas/Download_de_series_historicas/DownloadChuvasPublico.php)
 
 ## License
 
