@@ -22,14 +22,16 @@ remotes::install_github("rubensocj/hidrotsbr")
 library(hidrotsbr)
 ```
 
-- RIMAS data
+- RIMAS/CPRM Data
+
 Download groundwater level data from [RIMAS *Web*](http://rimasweb.cprm.gov.br/layout/).
 
 ``` r
 data <- read_rimas('/path/to/file.csv)
 ```
 
-- FUNCEME data
+- FUNCEME Data
+
 Download rainfall data from [FUNCEME](http://www.funceme.br/?page_id=2694) or [here](http://www.funceme.br/produtos/script/chuvas/Download_de_series_historicas/DownloadChuvasPublico.php).
 
 ``` r
