@@ -36,7 +36,3 @@ cprm <- read_funceme("/path/to/file.txt")
 
 - RIMAS/CPRM groundwater level data: [link](http://rimasweb.cprm.gov.br/layout/)
 - FUNCEME rainfall data: [link 1](http://www.funceme.br/?page_id=2694) or [link 2](http://www.funceme.br/produtos/script/chuvas/Download_de_series_historicas/DownloadChuvasPublico.php)
-
-## License
-
-This package is free and open source software, licensed under GPL-3.
