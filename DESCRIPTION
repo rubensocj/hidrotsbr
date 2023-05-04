@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Rubens Oliveira da Cunha Junior
 Description: Read, Clean and Process data from hydrological services of Brasil.
 Imports:
-  tidyerse
+  tidyverse
 License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.2.3
