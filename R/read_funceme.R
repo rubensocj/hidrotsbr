@@ -22,9 +22,6 @@
 #'
 #' @export
 read_funceme <- function(file) {
-  # require packages
-  require("dplyr")
-  require("tidyr")
 
   # load file
   x <- read.csv2(file, encoding = "latin1", sep = ";")

@@ -17,8 +17,6 @@
 #'
 #' @export
 read_rimas <- function(file) {
-  # require packages
-  require("dplyr")
 
   # import text file
   x <- base::readLines(file, encoding = "latin1")
