@@ -27,7 +27,7 @@ read_funceme <- function(file) {
   require("tidyr")
 
   # load file
-  x <- read.csv2(arquivo, encoding = "latin1", sep = ";")
+  x <- read.csv2(file, encoding = "latin1", sep = ";")
   n <- nrow(x)
 
   # coordinates
